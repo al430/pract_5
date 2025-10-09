@@ -1,0 +1,58 @@
+@font-face {  
+    font-family: 'MyFont';  
+    src: url('../fonts/gilroy-medium.ttf');  
+}
+
+body {
+    color: white;
+    background-color: #2c2c54;
+    margin: 0;
+    font-family: 'MyFont';
+}
+
+a {
+    color: white;
+}
+
+* {
+    
+    font-family: MyFont;
+}
+
+header {
+    background-color: #2c2c54;
+}
+
+.header_up {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    row-gap: 20%;
+}
+
+.s1 {
+    background-color:  #686de0 ;
+}
+
+.s2 {
+    background-color: #2c2c54;
+}
+
+.s3 {
+    background-color: #2c2c54;
+}
+
+.s4 {
+    background-color:  #686de0 ;
+}
+
+footer {
+    background-color: #2c2c54;
+}
