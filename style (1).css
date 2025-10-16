@@ -1,0 +1,450 @@
+@font-face{
+    font-family: 'Gilroy';
+    src: url('../fonts/gilroy-medium.ttf');
+}
+
+body{
+    background-color: #2c2c54;
+    font-family: 'Gilroy';
+    color: white;
+    margin: 0;
+}
+header{
+    background-color: #2c2c54;
+    padding: 10px 5%;
+    height: 80vh;
+}
+header p{
+    width: 30%;
+    margin: 60px 0;
+    font-size:24px;
+}
+
+h1{
+    font-size: 60px;
+    margin-top: 60px;
+}
+
+h2{
+     font-size: 45px;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+button{
+    background-color: #686de0;
+    color: #2c2c54;
+    width: 25%;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    border: 0;
+    cursor: pointer;
+}
+
+button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(95, 93, 93, 0.4);
+    transition: 0.3s;
+}
+
+
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+ 
+}
+
+.nav a{
+    position: relative; 
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover{
+    color:#d8b4fe;
+}
+
+.nav a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: #d8b4fe; 
+    transition: width 0.3s ease; 
+}
+
+.nav a:hover::after {
+    width: 100%; 
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.popularest{
+    background-color: #686de0;
+    padding: 60px;
+  
+
+}
+.popular{
+    background-color: #2c2c54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 66%;
+    padding: 40px;
+    border-radius: 50px;
+      outline: none;
+    box-shadow: 0 0 10px 5px white;
+}
+.pop{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.button-long{
+    margin-top: 20px;
+    width: 50%;
+}
+
+.looking{
+    background-color: #2c2c54;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+    
+}
+
+.looking h2{
+    align-self: flex-end;
+    
+}
+
+.looking a{
+    text-align: right;
+    text-decoration:underline;
+    margin-top: 20px;
+    align-self: flex-end;
+    transition: color 0.3s ease;
+}
+
+.looking a:hover{
+    color: #d8b4fe;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+
+.lo{
+    background-color: #2c2c54;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    width: calc(33.333% - 20px);
+    padding: 40px;
+    border-radius: 50px;
+    outline: none;
+    box-shadow: 0 0 10px 5px white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.news-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+}
+
+
+.news-header{
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.news-header a{
+    transition: color 0.3s ease;
+}
+
+.news-header a:hover{
+   color: #d8b4fe;
+}
+
+
+.news-header h2{
+    flex: 1;
+    text-align: center;
+    font-size: 45px;
+}
+
+.full-list-link{
+    text-align: right;
+    text-decoration:underline;
+    align-content: center;
+}
+
+
+.big-news{
+    width: 60%;
+}
+
+.big-news img{
+    width: 100%;
+    position: relative;
+}
+
+.overlay-text{
+    position: absolute;
+}
+
+
+
+
+
+.news-content{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+
+
+.small-news-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.small-news{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.small-news img{
+    width: 25%;
+}
+
+
+.small-news-container h3{
+    margin: 0;
+    text-decoration: underline;
+    font-size: 36px;
+}
+
+.small-news-container p{
+    margin: 0;
+    font-size: 30px;
+    width: 90%;
+}
+
+
+
+.forum{
+    background-color: #686de0;
+    padding: 60px;
+}
+
+.forum-title a {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+}
+
+.forum-title a:hover{
+    color:#2c2c54;
+}
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+   grid-template-areas: "A A X"
+                        "C B B";
+  
+    gap: 20px;
+    
+}
+
+.top-left-big-grid, .top-right-small-grid, .top-left-big-grid-1, .top-right-small-grid-2{
+    display: flex;
+    background-color: #2c2c54;
+    border-radius: 15px;
+    gap: 20px;
+}
+
+.text-gtid{
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+    margin: 20px 10px;
+}
+
+
+.text-gtid a{
+    color: #686de0;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+
+.text-gtid a:hover{
+    color: #d8b4fe;
+}
+
+
+.text-gtid p{
+    font-size: 24px;
+}
+
+.forum-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-left-big-grid{
+    grid-area: A;
+}
+
+.top-right-small-grid{
+    grid-area: X;
+}
+
+.top-left-big-grid-1{
+    grid-area: B;
+}
+
+.top-right-small-grid-2{
+    grid-area: C;
+}
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 60px;
+}
+
+.text-footer h3 {
+    font-size: 24px;
+    width: 40%;
+}
+
+
+.input-section{
+    display: flex;
+    gap: 0; 
+    width: 100%;
+    max-width: 1200px;
+
+}
+
+input{
+    width: 50%;
+    padding: 20px 20px;
+    border: none;
+    border-radius: 50px 0 0 50px; 
+    font-size: 20px;
+    color: #333;
+    outline: none;
+}
+
+
+
+.btn-email{
+    border-radius: 0 50px 50px 0;
+    border: none;
+    cursor: pointer;
+}
+
+
+.down-text p{
+    color: gray;
+}
+
+.down-text a{
+    color:#686de0;
+    font-size: 16px;
+}
+
+.down-text a:hover{
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(95, 93, 93, 0.4);
+    transition: 0.3s;
+}
+
+footer .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+}
+
+footer .menu a{
+    position: relative; 
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    transition: color 0.3s ease; 
+}
+
+footer .menu a:hover{
+    color: #d8b4fe;
+}
+
+footer .menu a::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0; 
+    height: 3px;
+    background-color: #d8b4fe; 
+    transition: width 0.3s ease; /* Анимация растяжения */
+}
+
+footer .menu a:hover::after {
+    width: 100%; /* Растягиваем до ширины ссылки */
+}
